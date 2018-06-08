@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity">
+
+    <!-- ImageView to show image of the company -->
+        <ImageView
+            android:id="@+id/companyImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/company_logo_image_description"
+            android:cropToPadding="false"
+            android:scaleType="fitCenter"
+            android:src="@drawable/company_logo" />
+
+        <!--TextView to show text about the Company -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:text= "@string/company_about"
+            android:textAlignment="center"
+            android:textSize="@dimen/sp_18"
+            android:textStyle="italic" />
+
+        <!--LinearView with horizontal orientation -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/sp_14"
+                android:text="@string/for_more_info"/>
+            <!--clickable textbox with link to company website-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/company_website"
+                android:textSize="@dimen/sp_14"
+                android:textColor="@android:color/holo_blue_dark"
+                android:linksClickable="true"
+                android:autoLink="web"/>
+        </LinearLayout>
+
+        <!--Heading textbox with product heading-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/sp_22"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:text="@string/product_heading"/>
+
+        <!--To make a line under Product Heading-->
+        <View
+            android:layout_width="@dimen/heading_line_width"
+            android:layout_height="@dimen/heading_line_height"
+            android:background="@android:color/black"/>
+
+        <!--TextView to show text about the product -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:textSize="@dimen/sp_18"
+            android:text="@string/product_description"/>
+
+        <!-- ImageView to show product image -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/respiron_product_photo_description"
+            android:src="@drawable/respiron_product"
+            android:scaleType="fitCenter"
+            android:adjustViewBounds="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/for_more_info"
+                android:textSize="@dimen/sp_14"/>
+            <!--clickable textbox with link to product website-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/product_website"
+                android:textColor="@android:color/holo_blue_dark"
+                android:linksClickable="true"
+                android:textSize="@dimen/sp_14"
+                android:autoLink="web" />
+        </LinearLayout>
+
+        <!--Heading textbox with Investor heading-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/sp_22"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:text="@string/investor_heading"/>
+        <!--To make a line under company Heading-->
+        <View
+            android:layout_width="60dp"
+            android:layout_height="2dp"
+            android:background="@android:color/black"/>
+
+        <!--TextView to show text about the Investor -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:textSize="@dimen/sp_18"
+            android:text="@string/investor_description"/>
+
+        <!--Heading textbox with Contact heading-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/sp_22"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:text="@string/contact_heading"/>
+        <!--To make a line under company Heading-->
+        <View
+            android:layout_width="@dimen/heading_line_width"
+            android:layout_height="@dimen/heading_line_height"
+            android:background="@android:color/black"/>
+
+        <!--LinearView to hold contact details -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/contact_linear_layout_margin"
+            android:layout_marginRight="@dimen/contact_linear_layout_margin">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_2">
+                <ImageView
+                    android:layout_width="@dimen/contact_details_icon_width"
+                    android:layout_height="@dimen/contact_details_icon_height"
+                    android:contentDescription="@string/address_label"
+                    android:src="@drawable/ic_location_city_black_48dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/company_address"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/sp_14"
+                    android:linksClickable="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_2">
+
+                <ImageView
+                    android:layout_width="@dimen/contact_details_icon_width"
+                    android:layout_height="@dimen/contact_details_icon_height"
+                    android:contentDescription="@string/phone_label"
+                    android:src="@drawable/ic_phone_black_48dp"/>
+                <!--clickable textbox to make a phone call-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/company_phone"
+                    android:textColor="@android:color/black"
+                    android:autoLink="phone"
+                    android:textSize="@dimen/sp_14"
+                    android:linksClickable="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_2">
+                <ImageView
+                    android:layout_width="@dimen/contact_details_icon_width"
+                    android:layout_height="@dimen/contact_details_icon_height"
+                    android:contentDescription="@string/website_label"
+                    android:src="@drawable/ic_public_black_48dp"/>
+
+                <!--clickable textbox with link to company website-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/company_website"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:autoLink="web"
+                    android:textSize="@dimen/sp_14"
+                    android:linksClickable="true"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dp_2">
+                <ImageView
+                    android:layout_width="@dimen/contact_details_icon_width"
+                    android:layout_height="@dimen/contact_details_icon_height"
+                    android:contentDescription="@string/email_label"
+                    android:src="@drawable/ic_email_black_48dp"/>
+
+                <!--clickable textbox with link to make email client-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/company_email"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="@dimen/sp_14"
+                    android:autoLink="email"
+                    android:linksClickable="true" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+</LinearLayout>
+</ScrollView>
